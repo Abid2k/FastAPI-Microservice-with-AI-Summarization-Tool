@@ -2,7 +2,7 @@
 
 ## 📌 Project Overview
 
-This project is a **FastAPI microservice** that provides text summarization capabilities using an **open-source AI model** from Hugging Face (e.g., DistilBART). The microservice exposes two endpoints:
+This project is a **FastAPI-Microservice-with-AI-Summarization-Too** that provides text summarization capabilities using an **open-source AI model** from Hugging Face (e.g., DistilBART). The microservice exposes two endpoints:
 
 - `/query`: Accepts a basic user query and returns a structured response.
 - `/summarize`: Accepts long-form text and returns a concise summary using AI.
@@ -27,7 +27,7 @@ This service is **production-ready**, includes **error handling**, and can be **
 ### **1️⃣ Clone the Repository**
 
 ```sh
-git clone https://github.com/your-username/fastapi-summarizer.git
+git clone https://github.com/your-username/FastAPI-Microservice-with-AI-Summarization-Tool.git
 cd fastapi-summarizer
 ```
 
@@ -161,4 +161,4 @@ Feel free to fork this repository and submit pull requests!
 
 ## 📩 Contact
 
-For any questions, reach out at [abid.hi2k"gmail.com](mailto:abid.hi2k"gmail.com).
+For any questions, reach out at [abid.hi2k@gmail.com](mailto:abid.hi2k@gmail.com).
