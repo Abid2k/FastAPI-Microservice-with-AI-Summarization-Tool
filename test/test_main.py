@@ -1,3 +1,4 @@
+import pytest
 from fastapi.testclient import TestClient
 from app.main import app
 
@@ -9,6 +10,11 @@ def test_query_endpoint():
     assert "message" in response.json()
 
 def test_summarize_endpoint():
-    response = client.post("/summarize", json={"text": "Long-form text content for summarization..."})
+    long_text = "This is a long text input that should be summarized. " * 10
+    response = client.post("/summarize", json={"text": long_text})
     assert response.status_code == 200
     assert "summary" in response.json()
+
+def test_summarize_short_text():
+    response = client.post("/summarize", json={"text": "Short"})
+    assert response.status_code == 400  # Should fail due to short input
